@@ -1,9 +1,12 @@
-const fs = r
-equire('node:fs');
+require('dotenv').config()
+const token = process.env.DISCORD_BOT_TOKEN;
+const clientId = process.env.CLIENT_ID;
+const guildId = process.env.GUILD_ID;
+
+const fs = require('node:fs');
 const path = require('node:path');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { CLIENT_ID: clientId, GUILD_ID: guildId, DISCORD_BOT_TOKEN: token } = require("dotenv").config().parsed;
 
 const commands = [];
 const commandsPath = path.join(__dirname, 'commands');
