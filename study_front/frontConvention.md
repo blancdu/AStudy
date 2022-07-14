@@ -1,50 +1,54 @@
+<!-- < class 101 > Reference : https://jobs.class101.net/1dc83442-c2d4-4162-94ae-4d04717f1ae0 -->
+<!-- < Grownbetter > Reference : https://www.notion.so/jaram/Frontend-style-guide-WIP-3cdf754915804bb1b8429cf8eba10972 -->
+
 현재 파일구조는 완벽하지 않은 상태이며, 언제든 변경될 수 있습니다.
-
-1. main page
-   1-1. github social login / logout : modal
-   1-2. board CRUD
-   1-3. searching problem with BOJ : SEO?
-
-2. my page
-   2-1. delete user info
-   2-2. update user info
-   2-3. my groups : 내가 속한 스터디 그룹들 모음
-
-3. study page
-   3-1. 문제풀이 비교
-   3-2. 코드 리뷰
-
-   - default -> 리뷰 요청자의 gitbuh url , img , content 를 간단하게 보여준다
-   - develop -> github codereview 시스템과 동일하게 만들고 연동한다.
-
-4. community page
-
-   - board CRUD
-   - commnets CRUD
-
-5. about us page
-
-   - 팀원 소개
-   - 서비스에 대한 설명 소개
-
-   <논의점>
-
-- 게시글 생성이 유저들의 소통만을 위한 게시글인가 ? 아니면 스터디 모집 게시글인가?
-  - 만약 소통만을 위한 게시글이면 스터디 CRUD 자체를 웹-> discord 로 뻗어나가게 만들어야 할 거 같음
+컨벤션은 언제든 변경될 수 있습니다.
 
 code convention
 
-- function
+- Variable
+
+  1. 변수는 기본적으로 camelCase 로 작성합니다.
+  2. Boolean 타입의 변수는 is, has, can 과 같은 접두사를 붙입니다.
+  3. 변수는 스코프 최상단에 선언합니다.
+  4. 상수 및 전역 변수는 모든 글자를 UpperCase 를 사용합니다.
+  5. 변수 선언 방식은 ES6 이후 추가된 const & let 을 지향합니다.
+
+- Function
 
   1. 함수 선언문으로 작성합니다
-  2. 함수 네이밍은 camelCase 로 작성합니다.
-  3. 파라미터가 3개 이상일 경우 특별한 경우가 아닌 이상 객체로 넘겨줍니다.
-  4. Class와 생성자에는 PascalCase를 사용합니다.
-  5. 상수 및 전역 변수는 모든 글자를 대문자로 사용합니다.
-  6. 변수는 es6 에 새로 추가된 const & let 사용을 지향하고 , var 를 지양합니다.
-  7. 변수의 선언은 스코프 상단에 합니다.
+  2. 함수의 이름은 동사로 시작합니다.
+  3. 함수의 이름은 기본적으로 camelCase 로 작성합니다.
+  4. 페이지 이동 메서드(함수) 이름은 다음과 같이 정의합니다.
+     - history.push ⇒ moveTo<...>Page (ex. moveToLecturePage)
+     - history.replace ⇒ replaceWith<...>Page (ex. replaceWithLecturePage)
+  5. 파라미터가 3개 이상일 경우 특별한 경우가 아닌 이상 객체로 넘겨줍니다.
+  6. Class와 생성자에는 PascalCase를 사용합니다.
 
-- typecasting
+- React/JSX Style Guide
+
+  1.  Event Handler
+
+      - Component Prop로 넘기는 이벤트 핸들러에는 on 접두사를 붙입니다.
+        // BAD 👎
+        <SignUpForm handleFormSubmit={~~} />
+        // GOOD 👍
+        <SignUpForm onFormSubmit={~~} />
+
+      - 이벤트 핸들러 이름은 Noun first 로 네이밍합니다.
+        // BAD 👎
+        const handleClickButton = useCallback(() => { ... })
+        <SignUpForm onSubmitForm={~~} />
+
+        // GOOD 👍
+        const handleButtonClick = useCallback(() => { ... })
+        <SignUpForm onFormSubmit={~~} />
+
+  2.  File Naming
+      - React Component를 정의한 파일은 PascalCase 로 적습니다.
+      - React Component를 포함하고 있지 않다면 .ts로 파일을 정의합니다.
+
+- TypeCasting
 
   1.  암묵적 타입 캐스팅을 지양하기 위해 == 대신 === 혹은 !== 을 사용합니다.
 
