@@ -5,9 +5,9 @@ const data = new SlashCommandBuilder()
 	.setDescription('Replies with Pong!');
 
 module.exports = {
-	data: data,
+	data,
 	async execute(interaction) {
-		const msg = await interaction.deferReply({ ephemeral: false, fetchReply: true });
+		const msg = await interaction.deferReply({ ephemeral: true, fetchReply: true });
 		await interaction.editReply({ content:`Bot Latency: ${msg.createdTimestamp - interaction.createdTimestamp}ms\nWebsocket Latency: ${interaction.client.ws.ping}ms`});
 	},
 };

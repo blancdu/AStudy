@@ -14,9 +14,9 @@ const data = new SlashCommandBuilder()
 			.setDescription('Info about the server'));
 
 module.exports = {
-	data: data,
+	data,
 	async execute(interaction) {
 		console.log(interaction.options);
-		await interaction.reply({ content:'개발중~', ephemeral: true});
+		await interaction.reply({ content:'개발중~', ephemeral: true });
 	},
 };
