@@ -1,3 +1,1 @@
-export const funcName = () => {
-  return;
-};
+export { Login } from "./Login/Login";
