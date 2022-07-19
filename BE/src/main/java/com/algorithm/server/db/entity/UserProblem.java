@@ -16,11 +16,11 @@ public class UserProblem {
     @Column(name = "USER_PROBLEM_PK", nullable = false)
     private long user_problem_pk;
 
-//    @ManyToOne(targetEntity = User.class, fetch = FetchType.LAZY)
-//    @JoinColumn(name="USER_PK")
-//    private User user;
-//
-//    @ManyToOne(targetEntity = Study.class, fetch = FetchType.LAZY)
-//    @JoinColumn(name="STUDY_PK")
-//    private Study study;
+    @ManyToOne(targetEntity = User.class, fetch = FetchType.LAZY)
+    @JoinColumn(name="USER_PK")
+    private User user;
+
+    @ManyToOne(targetEntity = Study.class, fetch = FetchType.LAZY)
+    @JoinColumn(name="STUDY_PK")
+    private Study study;
 }

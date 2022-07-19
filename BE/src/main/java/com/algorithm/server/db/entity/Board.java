@@ -20,7 +20,7 @@ public class Board {
     @Column(name = "BOARD_DISCRIPTION", nullable = false)
     private char board_discription;
 
-//    @ManyToOne(targetEntity = User.class, fetch = FetchType.LAZY)
-//    @JoinColumn(name="USER_PK")
-//    private User user;
+    @ManyToOne(targetEntity = User.class, fetch = FetchType.LAZY)
+    @JoinColumn(name="USER_PK")
+    private User user;
 }
