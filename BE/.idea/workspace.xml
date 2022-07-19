@@ -13,8 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/algorithm/server/db/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algorithm/server/db/entity/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/algorithm/server/db/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algorithm/server/db/entity/Comment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="ac8c967b3746cde4ffcc9e8f965ed87a323d8194" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JpbToolWindowState">
@@ -151,5 +154,9 @@
       <updated>1658133175441</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="# &lt;타입&gt; : &lt;제목&gt; 형식으로 작성하며 제목은 최대 50글자 정도로만 입력&#10;# 제목을 아랫줄에 작성, 제목 끝에 마침표 금지, 무엇을 했는지 명확하게 작성&#10;# 1일 1커밋은 필수! 하다못해 안되는 부분이라도 어디서, 뭐가 안됐는지 적기!&#10;## 예시) Feature : Add login&#10;Fix : merge conflict 수정&#10;################&#10;# 본문(추가 설명)을 아랫줄에 작성&#10;Merge conflict 수정&#10;################&#10;# 꼬릿말(footer)을 아랫줄에 작성 (관련된 이슈 번호 등 추가)&#10;강태훈&#10;################&#10;# Feature : 새로운 기능 추가&#10;# Fix : 버그 수정&#10;# Docs : 문서 수정&#10;# Test : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링&#10;# Style : 코드 의미에 영향을 주지 않는 변경사항&#10;# Chore : 빌드 부분 혹은 패키지 매니저 수정사항&#10;&#10;################" />
+    <option name="LAST_COMMIT_MESSAGE" value="# &lt;타입&gt; : &lt;제목&gt; 형식으로 작성하며 제목은 최대 50글자 정도로만 입력&#10;# 제목을 아랫줄에 작성, 제목 끝에 마침표 금지, 무엇을 했는지 명확하게 작성&#10;# 1일 1커밋은 필수! 하다못해 안되는 부분이라도 어디서, 뭐가 안됐는지 적기!&#10;## 예시) Feature : Add login&#10;Fix : merge conflict 수정&#10;################&#10;# 본문(추가 설명)을 아랫줄에 작성&#10;Merge conflict 수정&#10;################&#10;# 꼬릿말(footer)을 아랫줄에 작성 (관련된 이슈 번호 등 추가)&#10;강태훈&#10;################&#10;# Feature : 새로운 기능 추가&#10;# Fix : 버그 수정&#10;# Docs : 문서 수정&#10;# Test : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링&#10;# Style : 코드 의미에 영향을 주지 않는 변경사항&#10;# Chore : 빌드 부분 혹은 패키지 매니저 수정사항&#10;&#10;################" />
   </component>
 </project>
