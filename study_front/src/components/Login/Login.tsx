@@ -6,6 +6,7 @@ export const Login = () => {
   };
   return (
     <div className="loginContainer">
+      {/* <a href={GITHUB_LOGIN_URL}>Github으로 로그인</a> -> TODO: 사용하지 않은 이유 서술하기 */}
       <button onClick={socialLoginHandler} className="socialloginBtn">
         Github으로 로그인
       </button>
