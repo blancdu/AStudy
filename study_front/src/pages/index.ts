@@ -1,5 +1,4 @@
-import { Home } from "./Home";
-import { AboutUs } from "./AboutUs";
-import { User } from "./User";
-
-export { Home, AboutUs, User };
+export { Home } from "./Home";
+export { AboutUs } from "./AboutUs";
+export { User } from "./User";
+export { NotFound } from "./NotFound";
