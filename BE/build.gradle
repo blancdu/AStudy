@@ -14,15 +14,27 @@ repositories {
 }
 
 dependencies {
+	// 웹 서버 가동 라이브러리
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// 테스트 라이브러리
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// JPA와 DB
 	implementation 'mysql:mysql-connector-java'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.projectlombok:lombok'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
-	implementation 'io.springfox:springfox-swagger2:2.9.2'
 
+	// lombok
+	implementation 'org.projectlombok:lombok'
+
+	// Swagger
+	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.8.0'
+	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.8.0'
+
+	// Spring Security
+	//implementation 'org.springframework.boot:spring-boot-starter-security'
+	//implementation 'io.jsonwebtoken:jjwt:0.9.1'
 }
 
 tasks.named('test') {
