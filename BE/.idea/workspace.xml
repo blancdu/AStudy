@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="740314d0-b9de-4140-97ce-0808e9acbfd2" name="Changes" comment="# &lt;타입&gt; : &lt;제목&gt; 형식으로 작성하며 제목은 최대 50글자 정도로만 입력&#10;# 제목을 아랫줄에 작성, 제목 끝에 마침표 금지, 무엇을 했는지 명확하게 작성&#10;# 1일 1커밋은 필수! 하다못해 안되는 부분이라도 어디서, 뭐가 안됐는지 적기!&#10;## 예시) Feature : Add login&#10;##       Feature : 로그인 추가&#10;################&#10;# 본문(추가 설명)을 아랫줄에 작성&#10;로그인 DB 연동&#10;로그인 API &#10;로그아웃 API&#10;################&#10;# 꼬릿말(footer)을 아랫줄에 작성 (관련된 이슈 번호 등 추가)&#10;강태훈&#10;################&#10;# Feature : 새로운 기능 추가&#10;# Fix : 버그 수정&#10;# Docs : 문서 수정&#10;# Test : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링&#10;# Style : 코드 의미에 영향을 주지 않는 변경사항&#10;# Chore : 빌드 부분 혹은 패키지 매니저 수정사항&#10;&#10;################">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/algorithm/server/api/controller/GithubApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algorithm/server/api/controller/GithubApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/algorithm/server/api/dto/GithubDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algorithm/server/api/dto/GithubDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,10 +123,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Algorithm_Pjt/AStudy/BE/src/main"
+  }
+}]]></component>
   <component name="RunManager" selected="애플리케이션.ServerApplication">
     <configuration name="ServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.algorithm.server.ServerApplication" />

@@ -3,6 +3,7 @@ package com.algorithm.server.api.controller;
 import com.algorithm.server.api.dto.GithubDto;
 import com.algorithm.server.common.BaseResponseBody;
 import io.swagger.annotations.*;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
 @Api(value = "깃 헙 소셜 로그인 API",  tags = {"Github"})
 public class GithubApiController {
 
+    @Value("${GITHUB_CLIENT_PW}")
+    String temp;
 
     @PostMapping
     @ApiOperation(value = "Github code 받는다", notes = "Github code 받는다")
@@ -23,7 +26,8 @@ public class GithubApiController {
     public ResponseEntity<?> githubAccesstoken(
             @RequestBody @ApiParam(value="유저 정보", required = true) GithubDto.GithubLoginDto githubLoginDto
             ){
-        System.out.println(githubLoginDto.getCode());
+
+
         return ResponseEntity.status(200).body(BaseResponseBody.of(200, "성공"));
     }
 
