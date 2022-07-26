@@ -16,10 +16,17 @@ export const Login = () => {
     window.location.assign(GITHUB_LOGIN_URL);
   };
 
+  const logoutHandler = () => {
+    localStorage.removeItem("token");
+  };
+
   return (
     <div className="loginContainer">
       {isLogin ? (
-        <h1>login 성공</h1>
+        <>
+          <h1>login 성공</h1>
+          <button onClick={logoutHandler}>logout</button>
+        </>
       ) : (
         <button onClick={socialLoginHandler} className="socialloginBtn">
           Github으로 로그인
