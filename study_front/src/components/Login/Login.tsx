@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 
 export const Login = () => {
-  console.log(__dirname + "/./../../.env");
+  const { REACT_APP_GITHUB_ClIENT_ID, REACT_APP_GITHUB_CALLBACK_URL } =
+    process.env;
+  const githubBaseUrl = "https://github.com/login/oauth/authorize";
   const [isLogin, setIsLogin] = useState(false);
   const token = localStorage.getItem("token");
-  const GITHUB_CALLBACK_URL = "http://localhost:3000/auth/github/callback"; // TODO: useing dotenv
-  const GITHUB_LOGIN_URL = `https://github.com/login/oauth/authorize?client_id=4fb18a74d64e5c2ac9e0&redirect_uri=${GITHUB_CALLBACK_URL}`; // TODO: useing dotenv
-  console.log("GITHUB_ClIENT_ID : ", process.env.GITHUB_ClIENT_ID);
+  const GITHUB_LOGIN_URL = `${githubBaseUrl}?client_id=${REACT_APP_GITHUB_ClIENT_ID}&redirect_uri=${REACT_APP_GITHUB_CALLBACK_URL}`;
+
   useEffect(() => {
     if (token) setIsLogin(true);
   }, [token]);
