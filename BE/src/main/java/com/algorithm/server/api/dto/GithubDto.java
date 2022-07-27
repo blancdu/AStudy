@@ -13,11 +13,24 @@ public class GithubDto {
     @Setter
     // swagger dto 설명 미리 달아놓기
     @ApiModel("Github Login Dto 파라미터값 사전 정의")
-    public static class GithubLoginDto{
-
-
+    public static class getGithubToken{
         @ApiModelProperty(name="고객 code", required = true)
         String code;
+    }
+
+
+    @Getter
+    @Setter
+    @ApiModel("Github Response 예제")
+    public static class GithubResponse{
+        @ApiModelProperty(name = "access_token", required = true)
+        String access_token;
+
+        @ApiModelProperty(name = "scope", required = true)
+        String scope;
+
+        @ApiModelProperty(name = "token_type", required = true)
+        String token_type;
     }
 
 }
