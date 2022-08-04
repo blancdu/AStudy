@@ -8,9 +8,10 @@
     "build": "npm run build-ts",
     "serve": "cross-env NODE_ENV=development ts-node src/Bot.ts",
     "start": "npm run serve",
-    "test_build-ts": "cross-env NODE_ENV=test tsc",
-    "test_build": "npm run test_build-ts",
-    "test": "cross-env NODE_ENV=test  ts-node src/Bot.ts"
+    
+    "build:test": "cross-env NODE_ENV=test tsc",
+    "start:test": "cross-env NODE_ENV=test  ts-node src/Bot.ts",
+    "dbInit:test": "cross-env NODE_ENV=test  ts-node src/utils/dbInit.ts"
   },
   "author": "",
   "license": "ISC",
