@@ -39,21 +39,21 @@ public class GithubApiController {
         RestTemplate restTemplate = new RestTemplate();
         String url = "https://github.com/login/oauth/authorize";
         String code = getGithubToken.getCode().toString();
-
-        HttpHeaders httpHeaders = new HttpHeaders();
-        // 헤더
-        httpHeaders.setContentType(MediaType.APPLICATION_JSON);
-        // 바디
-        MultiValueMap<String, String> body = new LinkedMultiValueMap<>();
-        // 바디 값 추가
-        body.add("client_id", CLIENT_ID);
-        body.add("client_pw", CLIENT_PW);
-        body.add("code", code);
-        // 전체 엔티티 확정
-        HttpEntity<?> requestMessage = new HttpEntity<>(body, httpHeaders);
-        // 전송
-        HttpEntity<String> response = restTemplate.postForEntity(url, requestMessage, String.class);
-        System.out.println(response.getBody().toString());
+//
+//        HttpHeaders httpHeaders = new HttpHeaders();
+//        // 헤더
+//        httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+//        // 바디
+//        MultiValueMap<String, String> body = new LinkedMultiValueMap<>();
+//        // 바디 값 추가
+//        body.add("client_id", CLIENT_ID);
+//        body.add("client_pw", CLIENT_PW);
+//        body.add("code", code);
+//        // 전체 엔티티 확정
+//        HttpEntity<?> requestMessage = new HttpEntity<>(body, httpHeaders);
+//        // 전송
+//        HttpEntity<String> response = restTemplate.postForEntity(url, requestMessage, String.class);
+//        System.out.println(response.getBody().toString());
 
         return ResponseEntity.status(200).body(BaseResponseBody.of(200, "성공"));
     }
