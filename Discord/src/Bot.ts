@@ -23,8 +23,6 @@ import ready from './listeners/ready';
         console.error('Unable to connect to the database:', error);
     }
 
-    await sequelize.sync({ force: true });
-
     // Bot start
     await client.login(env.discord.bot_token);
 })();
