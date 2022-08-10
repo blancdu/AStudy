@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.5.3'
+	id 'org.springframework.boot' version '2.4.3'
 	// 2.7.1 로 했을 때 Security 클래스가 지원 중지되어 override 되지 않음
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
@@ -33,8 +33,12 @@ dependencies {
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.8.0'
 
 	// Spring Security
-	//implementation 'org.springframework.boot:spring-boot-starter-security'
-	//implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.security:spring-security-test'
+
+	// Spring boot JWT
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
 }
 
 tasks.named('test') {
