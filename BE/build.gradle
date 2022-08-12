@@ -14,6 +14,7 @@ repositories {
 }
 
 dependencies {
+
 	// 웹 서버 가동 라이브러리
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'

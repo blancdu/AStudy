@@ -1,17 +1,17 @@
 package com.algorithm.server.db.entity;
 
 import com.algorithm.server.common.BaseEntity;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Table
 public class User extends BaseEntity {
     @Id
     @GeneratedValue
@@ -21,9 +21,15 @@ public class User extends BaseEntity {
     @Column(name = "USER_ID", nullable = false)
     private char id;
 
+    @Column(name = "USER_PW", nullable = false)
+    private char pw;
+
     @Column(name = "USER_TOKEN", nullable = false)
     private char token;
 
     @Column(name = "USER_NAME", nullable = false)
     private char name;
+
+
+
 }
